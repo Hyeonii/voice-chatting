@@ -1,0 +1,2 @@
+export const toneOptionList = ['authoritative', 'clinical', 'cold', 'confident', 'cynical', 'emotional', 'empathetic', 'formal', 'friendly', 'humorous', 'informal', 'ironic', 'optimistic', 'pessimistic', 'sarcastic', 'serious', 'sympathetic','tentative', 'warm']
+export const writingStyleList = ['academic', 'analytical', 'argumentative', 'conversational', 'creative', 'critical', 'descriptive', 'epigrammatic', 'epistolary', 'expository', 'informative', 'instructive', 'journalistic', 'metaphorical', 'narrative', 'persuasive', 'poetic', 'satirical', 'technical']
