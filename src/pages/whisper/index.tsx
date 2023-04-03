@@ -20,7 +20,7 @@ function Whisper() {
     const openai = new OpenAIApi(configuration);
 
     const askToChatGPT = async () => {
-        console.log(userCommand.commendText  + (' tone: ' + userCommand.tone) + (' writing style:' + userCommand.writingStyle) + ' 200자 미만으로 만들어줘.');
+        
         try {
             const completion = await openai.createCompletion({
                 model: "text-davinci-003",

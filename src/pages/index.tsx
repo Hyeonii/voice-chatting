@@ -5,7 +5,7 @@ export default function Home() {
         <div>
             <h1>Home</h1>
             <h3>Whisper test page</h3>
-            <Link href="/whisper">Let's start</Link>
+            <Link href="/whisper">Let&apos;s start</Link>
         </div>
     )
 }
