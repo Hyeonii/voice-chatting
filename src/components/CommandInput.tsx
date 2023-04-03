@@ -21,11 +21,13 @@ function CommandInput({commendText, handleCommandState}: OptionTypes) {
         },
     })
 
-    useEffect(() => {
-        if (transcript.text && transcript.text !== '') {
+    const hadleStopRecording = async () => {
+        await stopRecording();
+
+        if (transcript.text) {
             handleCommandState('commendText', transcript.text);
         }
-    }, [transcript.text]);
+    }
 
     return (
         <div>
@@ -37,7 +39,7 @@ function CommandInput({commendText, handleCommandState}: OptionTypes) {
                 onChange={(e) => handleCommandState('commendText', e.target.value)}
             />
             <button onClick={startRecording}>Start</button>
-            <button onClick={stopRecording}>Stop</button>
+            <button onClick={hadleStopRecording}>Stop</button>
         </div>
     )
 }
